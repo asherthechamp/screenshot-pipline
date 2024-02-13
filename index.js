@@ -6,10 +6,10 @@ async function takeshot() {
     const page = await browser.newPage()
     await page.goto(path.join(__dirname, "index.html"))
     await page.screenshot({
-        path: "./shot.png",
+        path: path.join(__dirname, "shot.png"),
         fullPage: true
     })
-     await page.close()
+    await page.close()
     await browser.close()
 }
 
