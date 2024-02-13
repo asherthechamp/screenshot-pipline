@@ -9,7 +9,7 @@ async function takeshot() {
         path: "./shot.png",
         fullPage: true
     })
-    await page.close()
+     await page.close()
     await browser.close()
 }
 
