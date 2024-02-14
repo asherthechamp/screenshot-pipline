@@ -12,5 +12,5 @@ async function takeshot() {
     await page.close()
     await browser.close()
 }
-
+//takes shot
 takeshot()
